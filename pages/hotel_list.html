@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKI Hotel Listing</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+main {
+    display: block;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.filters {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.filters h2 {
+    margin-top: 0;
+}
+
+.filters label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.hotel-listing {
+    display: grid;
+    grid-gap: 20px;
+    padding: 3rem;
+}
+
+.hotel {
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.hotel img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.hotel-info {
+    flex-grow: 1;
+    padding: 2rem;
+    
+}
+
+.hotel h3 {
+    margin: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.price {
+    color: green;
+    font-size: 18px;
+}
+
+.book-now {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        margin-bottom: 20px;
+    }
+
+    header .search-bar input {
+        width: 200px;
+    }
+
+    .hotel {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hotel img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    header .search-bar input {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+    <header >
+        <div class="top-bar">
+            <div class="logo">OKI Hotels</div>
+            <nav>
+                <a href="#">Call us: 0124-6201611</a>
+                <a href="#">English ▼</a>
+                <a href="#">Login / Signup</a>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <h2>Over 174,000+ hotels and homes across 35+ countries</h2>
+            <input type="text" placeholder="Nagpur, Maharashtra, India">
+            <input type="date">
+            <input type="date">
+            <input type="text" placeholder="1 Room, 1 Guest">
+            <button> <a href="pages/hotel_list.html">Search</a></button>
+        </div>
+    </header>
+    
+    <main>
+    <section class="container">
+        <div class="filters">
+            <h3>Filters</h3>
+            <label><input type="checkbox"> Family OKIs</label><br>
+            <label><input type="checkbox"> For Group Travellers</label><br>
+            <label><input type="checkbox"> Local IDs Accepted</label><br>
+        </div>
+        <div class="hotel-listing">
+            <div class="hotel">
+                <img src="images/H1 Main.jpg" alt="Hotel 1">
+                <div class="hotel-info" >
+                    <h3 >Super Townhouse Kalamna</h3>
+                    <p style="padding: 4px;">Kalamna Market Road,Surya Nagar, Nagpur - 440056</p>
+                    <span style="font-size: 24px; color: black;">★★★★★</span><span><b> Ratings</b></span>
+                    <ul style="display: flex; list-style:none; padding:4px ">
+                        <li style="padding-right:2rem"><span>🛜Free Wifi</span></li></span></li>
+                        <li style="padding-right:2rem"><span>♨️Geysar</span></li>
+                        <li style="padding-right:2rem"><span>🅿️Parking</span></li>
+                        <li style="padding-right:2rem"><span>⚡Power Backup</span></li>
+                        <li style="padding-right:2rem"><span>🛗Elevator</span></li>
+                    </ul>
+                    <p class="price" style="padding: 4px;">₹1371 <del>₹5365</del> (74% off)</p>
+                    <div style="padding: 4px;">
+                        <a href="hotel_details.html" class="book-now">View Details</a>
+                        <a href="hotel_details.html" class="book-now">Book Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="images/H2Main.jpg" alt="Hotel 2">
+                <div class="hotel-info">
+                    <h3>Hotel O Grand Trinity</h3>
+                    <p style="padding: 4px;">9, Second Floor, Shree Ambika Santip Apartment , Katol Road, Nagpur-440087</p>
+                    <span style="font-size: 24px; color: black;">★★★★☆</span><span><b> Ratings</b></span>
+                    <ul style="display: flex; list-style:none; padding:4px ">
+                        <li style="padding-right:2rem"><span>🛜Free Wifi</span></li></span></li>
+                        <li style="padding-right:2rem"><span>♨️Geysar</span></li>
+                        <li style="padding-right:2rem"><span>🅿️Parking</span></li>
+                        <li style="padding-right:2rem"><span>⚡Power Backup</span></li>
+                        <li style="padding-right:2rem"><span>🛗Elevator</span></li>
+                    </ul>
+                    <p class="price" style="padding: 6px;">₹637 <del>₹2761</del> (76% off)</p>
+                    <div>
+                        <a href="hotel_details2.html" class="book-now">View Details</a>
+                        <a href="hotel_details2.html" class="book-now">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="images/H3 Main.jpg" alt="Hotel 3">
+                <div class="hotel-info">
+                    <h3>Super Townhouse Central Bazar Road, Ramdaspeth</h3>
+                    <p style="padding: 4px;">148, Central Bazar, Behind Meditrina hospital, Ramdaspeth, Nagpur - 440023</p>
+                    <span style="font-size: 24px; color: black;">★★★★☆</span><span><b> Ratings</b></span>
+                    <ul style="display: flex; list-style:none; padding:4px ">
+                        <li style="padding-right:2rem"><span>🛜Free Wifi</span></li></span></li>
+                        <li style="padding-right:2rem"><span>♨️Geysar</span></li>
+                        <li style="padding-right:2rem"><span>🅿️Parking</span></li>
+                        <li style="padding-right:2rem"><span>⚡Power Backup</span></li>
+                        <li style="padding-right:2rem"><span>🛗Elevator</span></li>
+                    </ul>
+                    <p class="price" style="padding: 6px;">₹1206 <del>₹5386</del> (77% off)</p>
+                    <div>
+                        <a href="hotel_details3.html" class="book-now">View Details</a>
+                        <a href="hotel_details3.html" class="book-now">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="images/H4 Main.jpg" alt="Hotel 4">
+                <div class="hotel-info">
+                    <h3>Super Hotel O Hingna Road, Wanadongri</h3>
+                    <p style="padding: 4px;">2854, Takdi Sim , Wanadongri, Hingna Road, Nagpur - 440034</p>
+                    <span style="font-size: 24px; color: black;">★★★★★</span><span><b> Ratings</b></span>
+                    <ul style="display: flex; list-style:none; padding:4px">
+                        <li style="padding-right:2rem"><span>🛜Free Wifi</span></li></span></li>
+                        <li style="padding-right:2rem"><span>♨️Geysar</span></li>
+                        <li style="padding-right:2rem"><span>🅿️Parking</span></li>
+                        <li style="padding-right:2rem"><span>⚡Power Backup</span></li>
+                        <li style="padding-right:2rem"><span>🛗Elevator</span></li>
+                    </ul>
+                    <p class="price" style="padding: 6px;">₹941 <del>₹3462</del> (72% off)</p>
+                    <div>
+                        <a href="hotel_details4.html" class="book-now">View Details</a>
+                        <a href="hotel_details4.html" class="book-now">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="footer-container">
+            <!-- Company Info Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a leading hotel chain offering affordable and high-quality stays at over 174,000+ properties worldwide.</p>
+                <address>
+                    <p>OKI Rooms, 123 Hotel Street, New Delhi, India</p>
+                    <p>Email: support@OKI.com</p>
+                    <p>Phone: 0124-6201611</p>
+                </address>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 OKI Rooms. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

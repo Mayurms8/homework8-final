@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKI Hotel Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #e60000;
+            padding: 15px 30px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo{
+            color: #ccc;
+            font-weight: 800;
+        }
+        .header img {
+            height: 40px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .hotel-images {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+        }
+        .hotel-images img {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .hotel-details {
+            display: flex;
+            margin-top: 20px;
+            padding: 2rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            margin: 1rem;
+        }
+        .hotel-main-image img {
+            width: 100%;
+            height: 30rem;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .hotel-info {
+            flex-grow: 1;
+        }
+        .hotel-info h2 {
+            margin: 0;
+            color: #333;
+        }
+        .amenities {
+            margin-top: 10px;
+            color: #555;
+        }
+        .price {
+            color: green;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .book-now {
+            display: inline-block;
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .hotel-detailed-info{
+            padding: 2rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="top-bar">
+            <div class="logo">OKI Hotels</div>
+            <nav>
+                <a href="#">Call us: 0124-6201611</a>
+                <a href="#">English ▼</a>
+                <a href="#">Login / Signup</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="hotel-main-image">
+                <img src="images/H3 Main.jpg" alt="Main Hotel Image">
+            </div>
+        <div class="hotel-images">
+            <img src="images/H3 A.jpg" alt="Hotel Image 1">
+            <img src="images/H3 B.jpg" alt="Hotel Image 2">
+            <img src="images/H3 C.jpg" alt="Hotel Image 4">
+        </div>
+        <div class="hotel-details">
+            <div class="hotel-info">
+                <h2>Super Townhouse Central Bazar Road, Ramdaspeth</h2>
+                <p>148, Central Bazar, Behind Meditrina hospital, Ramdaspeth, Nagpur - 440023</p>
+                <p class="amenities">Reception | Free Wifi | Power Backup | Parking | Elevator | Room Service | +15 More</p>
+                <p class="price">₹1206 <del>₹5386</del> (77% off)</p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+        <div class="hotel-detailed-info">
+            <h4>Hotel Information</h4>
+            <div class="hotel-details-points">
+                <ul>
+                    <li>Check IN 12:00PM || Check OUT 11:00AM</li>
+                    <li>Unmarried couples are welcome..!</li>
+                    <li>Guest can check in using any local or outstation ID proof (PAN card not accepted)</li>
+                    <li>Paid breakfast, lunch, dinner available</li>
+                    <li>Cancellation available before 24 hours of Check IN.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <!-- Company Info Section -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are a leading hotel chain offering affordable and high-quality stays at over 174,000+ properties worldwide.</p>
+            <address>
+                <p>OKI Rooms, 123 Hotel Street, New Delhi, India</p>
+                <p>Email: support@OKI.com</p>
+                <p>Phone: 0124-6201611</p>
+            </address>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 OKI Rooms. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
+
